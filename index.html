@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>E Commerce</title>
+</head>
+
+<body class="bg-light">
+
+    <div class="bigBox container border-danger p-4 m-3 mx-auto">
+        <h1 class="text-center text-primary heading pb-4 fw-bold">E-Commerce Cart Page</h1>
+
+        <p class="alert alert-danger text-center p-1 fw-bold" id="errorMsg">Enter Input to continue...</p>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control shadow-none" id="floatingInput" placeholder="Add an Item">
+            <label  class="text-primary">Add an item</label>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <button class="btn bg-primary text-white" style="width: 10rem;" onclick="addme()">SUBMIT</button>
+          </div>
+
+          <div class="mt-5 d-flex flex-wrap gap-3 mx-auto">
+            <!-- <button onclick="editItem()">Edit Item</button> -->
+            <button onclick="delFirst()">Delete First Item</button>
+            <button onclick="delLast()">Delete Last Item</button>
+            <!-- <button>Delete Any Item</button> -->
+            <button onclick="addStart()">Add to Start</button>
+            <!-- <button onclick="delAll()">Delete all Items</button> -->
+          </div>
+        </div>
+
+        <div id="items" class="mt-3 shadow"></div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
