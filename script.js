@@ -1,5 +1,4 @@
 var itemsCart = [];
-// var myCartT
 
 function addme() {
   if (floatingInput.value === "") {
@@ -41,16 +40,12 @@ function delLast() {
   displayTable();
 }
 
-function editItem() {
-
-}
-
 function addStart(){
     itemsCart.unshift(floatingInput.value)
     displayTable()
 }
 
 function delAll(){
-    itemsCart.splice(itemsCart.length)
+    itemsCart.splice(0, itemsCart.length)
     displayTable()
 }
